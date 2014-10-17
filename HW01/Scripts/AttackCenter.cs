@@ -2,20 +2,12 @@ using UnityEngine;
 using System.Collections;
 
 public class AttackCenter : MonoBehaviour {
-	
-	public static bool isDone = false;
-	private bool firstTime = false;
-	public static float time1;
-	public static float time2;
-
 	//the speed, in units per second, we want to move towards the target
 	float speed = 1;
 	// Use this for initialization
 	void Start () {
 		speed += Random.Range(0f, 2f);
 	}
-
-
 	
 	// Update is called once per frame
 	void Update () {
@@ -49,6 +41,7 @@ public class AttackCenter : MonoBehaviour {
 				Space.World);
 		} else {
 			//We made it.
+
 			Debug.Log("Failure to protect your base, all belong to us.");
 
 			//Compiler statements below, the lines beginning with #
@@ -57,26 +50,14 @@ public class AttackCenter : MonoBehaviour {
 			//When in the Unity Editor, Application.Quit doesn't work
 			//When building a release, UnityEditor class isn't available.
 			//So we have to choose between them with the compile time conditionals.
-			isDone = true;
-			if(firstTime == false)
-				time1 = Time.realtimeSinceStartup;
-			firstTime = true;
-			time2 = Time.realtimeSinceStartup;
 
-			Debug.Log("Time1: "+time1 + "\tTime2: "+ time2);
-
-			if( (time2 - time1) > 1)
-			{
-				#if UNITY_EDITOR
-				UnityEditor.EditorApplication.isPlaying = false;
-				#else
-				Application.Quit();
-				#endif
-			}
-
+			#if UNITY_EDITOR
+			UnityEditor.EditorApplication.isPlaying = false;
+			#else
+			Application.Quit();
+			#endif
 		}
 	}
-
 
 	private void PulseObject() {
 		//the number of pulses per second
