@@ -5,7 +5,7 @@ GYTE/CSE 462: Applied Augmented Reality and 3D User Interfeces (Fall 2014) (Unit
 
 I used below technologies for these projects.
 
-![Progress](http://progressed.io/bar/38?title=progress)
+![Done](http://progressed.io/bar/30?title=done)
 
 [Vuforia + Unity + Android]
 
