@@ -3,12 +3,11 @@ CSE462-Applied-Augmented-Reality-and-3D-User-Interfeces
 
 GYTE/CSE 462: Applied Augmented Reality and 3D User Interfeces (Fall 2014) (Unity/Vuforia)
 
-I use below technologies for these projects.
+I used below technologies for these projects.
 
-![Progress](http://progressed.io/bar/18?title=progress)
+![Progress](http://progressed.io/bar/38?title=progress)
 
 [Vuforia + Unity + Android]
 
-![Unity](http://forum.unity3d.com/attachments/logo-title)
-![Vuforia](http://www.realareal.com/wp-content/uploads/2012/12/)
-![Android](http://www.android.com/media/androi)
+![Vuforia](http://nonlinearcreative.com/wp-content/uploads/2013/02/Vuforia.png)
+![Android](https://www.android.com/new/images/logos-2x/android-wordmark-8EC047.png)
